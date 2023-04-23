@@ -1,0 +1,24 @@
+@host=https://localhost:5001
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJnaXZlbl9uYW1lIjoiUnVrc2hhbiIsImZhbWlseV9uYW1lIjoiUGVyZXJhIiwianRpIjoiZTA0ZjI3YmUtNjJiMC00MGViLWFhNjQtZDE0YzQ5ZDhmNjYwIiwiZXhwIjoxNjgyMDAzMjQ4LCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.xnSPJOMoy6WC3pOjqyVvlD55llKCuPKY_wyF0claQyc
+@hostId=test123
+
+POST {{host}}/hosts/{{hostId}}/menus
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Yammy Menu",
+    "description": "A menu with yammy foodes",
+    "sections": [
+        {
+            "name": "Appetizers",
+            "description": "",
+            "items": [
+                {
+                    "name": "menu item1",
+                    "description": "menu description 1"
+                }
+            ]
+        }
+    ]
+}

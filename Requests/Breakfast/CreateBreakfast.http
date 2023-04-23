@@ -1,0 +1,46 @@
+@host=https://localhost:5001
+
+POST {{host}}/breakfasts
+Content-Type: application/json
+
+{
+    "name": "V",
+    "description": "",
+    "startDateTime": "2022-04-08T05:00:00",
+    "endDateTime": "2022-04-08T11:00:00",
+    "savory": [
+        "Oatmeal",
+        "Avocado Toast",
+        "Omelette",
+        "Salad"
+    ],
+    "Sweet": [
+        "Cookie"
+    ]
+}
+
+###
+
+
+POST {{host}}/breakfasts
+Content-Type: application/json
+
+{
+    "breakfastDetails":{
+        "name": "x",
+        "description": "x",
+        "startDateTime": "2022-04-08T05:00:00",
+        "endDateTime": "2022-04-08T11:00:00"
+    },
+    
+    "savory": [
+        
+    ],
+    "Sweet": [
+        "Cookie"
+    ]
+}
+
+###
+
+GET {{host}}/Breakfasts/e35daaba-5a9e-43a2-9305-3dead8296fe0
